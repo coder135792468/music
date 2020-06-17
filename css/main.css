@@ -1,0 +1,459 @@
+body {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--trans-col);
+    scroll-behavior: smooth;
+
+}
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 9999;
+}
+.loader-wrapper p{
+    color: #fff;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.lds-roller {
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+
+.lds-roller div {
+    animation: lds-roller 1.3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+:root {
+    --trans-col: #000;
+    --general-col: #fff;
+    --search-bg-col: #1e2a78;
+    --clip-col0: #6633ff;
+    --clip-col1: #cc0033;
+    --gradient0: linear-gradient(#ff0033, #ff0099);
+    --gradient1: linear-gradient(#ff0099, #cc0099);
+    --gradient2: linear-gradient(#cc0099, #ff0099);
+}
+.logo{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+}
+.site {
+    width: 100%;
+    height: auto;
+}
+
+.site .main-page {
+    width: 100%;
+    height: 100%;
+}
+
+.main-page {
+    width: 100%;
+    height: auto;
+}
+.clips .clip:nth-child(1) {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 60px;
+    height: 60px;
+    background: var(--gradient1);
+    border-radius: 10px;
+    transform: rotate(45deg);
+    animation: animate 2.2s infinite linear;
+}
+
+.clips .clip:nth-child(2) {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient0);
+    border-radius: 10px;
+    transform: rotate(45deg);
+    animation-delay: 0.6s;
+    animation: animate 2.8s infinite linear;
+}
+
+.clips .clip:nth-child(3) {
+    position: absolute;
+    top: 25%;
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient0);
+    border-radius: 10px;
+    transform: rotate(45deg);
+    animation-delay: 0.2s;
+    animation: animate 2.5s infinite linear;
+}
+
+.clips .clip:nth-child(4) {
+    position: absolute;
+    top: 125%;
+    left: 67%;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient1);
+    border-radius: 10px;
+    transform: rotate(45deg);
+    animation-delay: 0.2s;
+    animation: animate 2.5s infinite linear;
+}
+
+.clips .clip:nth-child(5) {
+    position: absolute;
+    top: 185%;
+    left: 21%;
+    width: 40px;
+    height: 40px;
+    background: var(--gradient1);
+    border-radius: 10px;
+    transform: rotate(45deg);
+    animation-delay: 0.8s;
+    animation: animate 2.2s infinite linear;
+}
+
+.clips .clip:nth-child(6) {
+    position: absolute;
+    top: 243%;
+    left: 55%;
+    width: 60px;
+    height: 60px;
+    background: var(--gradient1);
+    border-radius: 10px;
+    transform: rotate(45deg);
+    animation-delay: 0.8s;
+    animation: animate 2.2s infinite linear;
+}
+
+@keyframes animate {
+    50% {
+        transform: scale(1.3) rotate(45deg);
+    }
+}
+
+.main-page .cover-img {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../img/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    object-fit: cover;
+}
+
+/* .main-page .cover-img:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        z-index: 999;
+        background: linear-gradient(transparent, var(--trans-col));
+    } */
+
+.main-page .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.main-page .text-container .bold-text {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page .text-container .bold-text span {
+    width: 100%;
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 3px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.main-page .text-container input[type=text] {
+    background-color: var(--search-bg-col);
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+    color: var(--general-col);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding: 20px 80px 20px 10px;
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--general-col);
+    opacity: 1;
+    /* Firefox */
+}
+
+.genre-page {
+    width: 100%;
+    height: auto;
+    background: var(--gradient0);
+    padding: 10rem 0 4rem 0;
+}
+
+.genre-page .genre-title {
+    font-size: 3rem;
+    color: var(--general-col);
+    padding: 0 0 30px 20px;
+}
+
+.genre-page .card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.genre-page .card .card-single {
+    width: 180px;
+    height: auto;
+    margin: 3vh;
+}
+
+.genre-page .card .card-single .card-img {
+    width: 180px;
+    height: 120px;
+    border-radius: 10px;
+    background-position: 0 0;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.genre-page .card .card-single .card-text {
+    font-size: 0.8em;
+    color: var(--general-col);
+    letter-spacing: 1px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.song-page {
+    width: 100%;
+    height: auto;
+    background: var(--gradient1);
+    padding: 4rem 0 8rem 0;
+}
+
+.song-page .song-title {
+    font-size: 3rem;
+    color: var(--general-col);
+    padding: 0 0 30px 20px;
+}
+
+.song-page .song-container {
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+}
+
+.song-page .song-container .song-list {
+    padding: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-page .song-container .song-list .song-01 {
+    width: 300px;
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    flex-grow: initial;
+    flex-flow: row;
+    margin: 1rem;
+}
+
+.song-page .song-container .song-list .song-01 .artist-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    z-index: 99;
+    transition: 0.2s;
+    background-position: center center;
+    background-size: cover;
+    cursor: grab;
+    object-fit: cover;
+}
+
+.song-page .song-container .song-list .song-01 .artist-img:hover {
+    transform: scale(1.2);
+}
+
+.song-page .song-container .song-list .song-01 .about-song {
+    padding: 1rem;
+    z-index: 99;
+}
+
+.song-page .song-container .song-list .song-01 .about-song .song-name {
+    font-size: 14px;
+    color: var(--general-col);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.song-page .song-container .song-list .song-01 .about-song .artist-name {
+    font-size: 10px;
+    color: var(--general-col);
+    letter-spacing: 1px;
+    padding: 5px 0 0 0;
+    text-transform: capitalize;
+}
+footer{
+    width: 100%;
+    background: var(--gradient2);
+    padding: 3rem 0 3rem 0;
+}
+footer .dev{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--general-col);
+}
+footer .dev span{
+    display: block;
+    font-size: 0.6rem;
+}
